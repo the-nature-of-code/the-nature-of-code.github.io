@@ -3,11 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
   <title>The Nature Of Code</title>
 </head>
 <body>
+  <style>
+    body {
+      text-align: center;
+      padding: 36px;
+    }
+    .quote-wrapper {
+      font-family: 'Parisienne', cursive;
+      font-style: italic;
+      font-size: 36px;
+      display: inline;
+    }
+    .quote::before {
+      content: '\201C';
+    }
+    .quote::after {
+      content: '\201D';
+    }
+    .author::before {
+      content: '- ';
+      margin-left: 1em;
+    }
+    .author {
+      font-size: 0.75em;
+    }
+  </style>
   <div class="quote-wrapper">
-    <div class="quote">Code is literally just a stack overflow scrapbook.</div>
+    <div class="quote">Code is literally just a Stack Overflow scrapbook.</div>
     <div class="author">Aez The Reacc Noob, 2021</div>
   </div>
 </body>
