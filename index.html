@@ -4,20 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
   <title>The Nature Of Code</title>
 </head>
 <body>
   <style>
     body {
       text-align: center;
-      padding: 36px;
+      background: url('./bg.jpg') center / cover;
+      height: 100vh;
+      overflow: hidden;
     }
     .quote-wrapper {
-      font-family: 'Parisienne', cursive;
+      font-family: 'Playfair Display', cursive;
       font-style: italic;
       font-size: 36px;
-      display: inline;
+      margin-top: 3em;
+      background-color: rgba(255, 255, 255, 0.5);
+      display: inline-block;
+      padding: 0.5em;
     }
     .quote::before {
       content: '\201C';
@@ -30,7 +35,9 @@
       margin-left: 1em;
     }
     .author {
+      margin-top: 0.75em;
       font-size: 0.75em;
+      color: #686868;
     }
   </style>
   <div class="quote-wrapper">
